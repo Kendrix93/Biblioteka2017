@@ -2,12 +2,14 @@ package data.model;
 
 public class Book extends Item{
 	
-	int pages;
+	private int pages;
+	private int year;
 
 	public Book(String id, String type, String name, String author, 
-			String company,int pages, int counter) {
+			String company, int year, int pages, int counter) {
 		super(id, type, name, author, company, counter);
 		// TODO Auto-generated constructor stub
+		this.year = year;
 		this.pages = pages;
 		
 	}
@@ -19,12 +21,22 @@ public class Book extends Item{
 	public void setPages(int pages) {
 		this.pages = pages;
 	}
+	
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
 		result = prime * result + pages;
+		result = prime * result + year;
 		return result;
 	}
 
@@ -39,12 +51,14 @@ public class Book extends Item{
 		Book other = (Book) obj;
 		if (pages != other.pages)
 			return false;
+		if (year != other.year)
+			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Book [pages=" + pages + "]";
+		return "Book [pages=" + pages + ", year=" + year + "]";
 	}
 	
 	
