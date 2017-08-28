@@ -40,6 +40,16 @@ public class MainController {
 		System.out.println("2. Search for item");
 		System.out.println("3. ");
 		System.out.println("0. Quit");
+		
+		int a = in.nextInt();
+		
+		switch(a) {
+		
+		case 1:
+			
+		}
+		
+		
 	}
 
 }
