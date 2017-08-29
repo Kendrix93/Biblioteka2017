@@ -8,14 +8,17 @@ public abstract class Item {
 	private String author;
 	private String company;
 	private int counter;
+	private User user;
 	
-	public Item(String id, String type, String name, String author, String company, int counter){
+	public Item(String id, String type, String name, String author, 
+			String company, int counter, User user){
 		this.id = id;
 		this.type = type;
 		this.name = name; 
 		this.author = author;
 		this.company = company;
 		this.counter = counter;
+		this.user = user;
 		
 	}
 
@@ -66,6 +69,15 @@ public abstract class Item {
 	public void setCounter(int counter) {
 		this.counter = counter;
 	}
+	
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 
 	@Override
 	public int hashCode() {
@@ -77,6 +89,7 @@ public abstract class Item {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
+		result = prime * result + ((user == null) ? 0 : user.hashCode());
 		return result;
 	}
 
@@ -116,13 +129,18 @@ public abstract class Item {
 				return false;
 		} else if (!type.equals(other.type))
 			return false;
+		if (user == null) {
+			if (other.user != null)
+				return false;
+		} else if (!user.equals(other.user))
+			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
 		return "Item [id=" + id + ", type=" + type + ", name=" + name + ", author=" + author + ", company=" + company
-				+ ", counter=" + counter + "]";
+				+ ", counter=" + counter + ", user=" + user + "]";
 	}
 	
 	
