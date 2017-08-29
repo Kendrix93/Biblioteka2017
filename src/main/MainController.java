@@ -2,6 +2,8 @@ package main;
 
 import java.util.Scanner;
 
+import utlis.UserManage;
+
 public class MainController {
 	
 	private static Scanner in = new Scanner(System.in);
@@ -27,7 +29,17 @@ public class MainController {
 		
 		case 1:
 			
-		}
+		case 2:
+			
+		case 5:
+			UserManage.adduser();
+			EmployyPanel();
+		case 7:
+			UserManage.showUsers();
+			EmployyPanel();
+			
+			
+			}
 		
 		
 	}
