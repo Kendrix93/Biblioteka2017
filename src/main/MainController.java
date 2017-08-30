@@ -3,6 +3,7 @@ package main;
 import java.util.Scanner;
 
 import utlis.ItemManage;
+import utlis.SaveToCSV;
 import utlis.UserManage;
 
 public class MainController {
@@ -54,6 +55,7 @@ public class MainController {
 			EmployyPanel();
 		case 10:
 			UserManage.adduser();
+			SaveToCSV.saveToFileUser();
 			EmployyPanel();
 		case 12:
 			UserManage.showUsers();
