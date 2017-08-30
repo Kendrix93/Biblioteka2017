@@ -95,5 +95,15 @@ public class ItemManage {
 	}
 	
 	
+	public static void deleteItem() {
+		
+		System.out.println("Write an ID of item you want to delete");
+		String ID = in.nextLine();
+		for (Item a: items) {
+			if(a.getId().equals(ID))
+				items.remove(a);
+		}
+	}
+	
 
 }

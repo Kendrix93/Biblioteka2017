@@ -46,6 +46,9 @@ public class MainController {
 		case 7:
 			ItemManage.addFilm();
 			EmployyPanel();
+		case 8:
+			ItemManage.deleteItem();
+			EmployyPanel();
 		case 9:
 			ItemManage.showAllItems();
 			EmployyPanel();
@@ -55,6 +58,8 @@ public class MainController {
 		case 12:
 			UserManage.showUsers();
 			EmployyPanel();
+		case 0:
+			System.exit(0);
 			
 			
 			}
