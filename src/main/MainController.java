@@ -2,6 +2,7 @@ package main;
 
 import java.util.Scanner;
 
+import utlis.ItemManage;
 import utlis.UserManage;
 
 public class MainController {
@@ -16,11 +17,16 @@ public class MainController {
 		System.out.println("2. Rent a Music");
 		System.out.println("3. Rent a Film");
 		System.out.println("4. Return item");
-		System.out.println("5. Add User");
-		System.out.println("6. Delete User ");
-		System.out.println("7. Show users ");
-		System.out.println("8. ");
-		System.out.println("9. ");
+		System.out.println("5. Add book");
+		System.out.println("6. Add Music");
+		System.out.println("7. Add film");
+		System.out.println("8. Delete Item");
+		System.out.println("9. Show all items");
+		System.out.println("10. Add User");
+		System.out.println("11. Delete User ");
+		System.out.println("12. Show users ");
+		System.out.println(" ");
+		System.out.println(" ");
 		System.out.println("0. Quit");
 		
 		int a = in.nextInt();
@@ -32,9 +38,21 @@ public class MainController {
 		case 2:
 			
 		case 5:
-			UserManage.adduser();
+			ItemManage.addBook();
+			EmployyPanel();
+		case 6:
+			ItemManage.addMusic();
 			EmployyPanel();
 		case 7:
+			ItemManage.addFilm();
+			EmployyPanel();
+		case 9:
+			ItemManage.showAllItems();
+			EmployyPanel();
+		case 10:
+			UserManage.adduser();
+			EmployyPanel();
+		case 12:
 			UserManage.showUsers();
 			EmployyPanel();
 			

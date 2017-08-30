@@ -42,12 +42,6 @@ public class Music extends Item{
 			return false;
 		return true;
 	}
-
-	@Override
-	public String toString() {
-		return "CD [songsQuantity=" + songsQuantity + "]";
-	}
-	
 	
 
 }

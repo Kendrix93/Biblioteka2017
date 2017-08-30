@@ -56,11 +56,7 @@ public class Book extends Item{
 		return true;
 	}
 
-	@Override
-	public String toString() {
-		return "Book [pages=" + pages + ", year=" + year + "]";
-	}
-	
+
 	
 
 }

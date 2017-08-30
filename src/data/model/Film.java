@@ -42,11 +42,7 @@ public class Film extends Item {
 		return true;
 	}
 
-	@Override
-	public String toString() {
-		return "Film [minuts=" + minuts + "]";
-	}
-	
+
 	
 
 }
