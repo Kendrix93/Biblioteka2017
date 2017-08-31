@@ -39,4 +39,18 @@ public class SaveToCSV {
 		System.out.println("Done save to file User");
 	}
 
+	public static void saveToFileItems() {
+		
+		Path path = Paths.get(filename2);
+		ArrayList<String> out = new ArrayList<>();
+		for(Item i: items) {
+				out.add(i.toFile(";"));	
+		}try {
+			Files.write(path, out);
+		}catch(IOException ex){
+			System.out.println("Cant save file Users");
+		}
+		System.out.println("Done save to file User");
+	}
+	
 }

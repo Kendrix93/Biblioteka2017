@@ -42,6 +42,13 @@ public class Music extends Item{
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Music [getId()=" + getId() + ", getType()=" + getType() + ", getName()=" + getName() + ", getAuthor()="
+				+ getAuthor() + ", getCompany()=" + getCompany() + ", getUser()=" + getUser() + ", toString()="
+				+ super.toString() + ", getClass()=" + getClass() + ", songsQuantity=" + songsQuantity + "]";
+	}
 	
 
 }

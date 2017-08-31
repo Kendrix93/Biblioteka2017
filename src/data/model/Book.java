@@ -56,6 +56,20 @@ public class Book extends Item{
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "Book [getId()=" + getId() + ", getType()=" + getType() + ", getName()=" + getName() + ", getAuthor()="
+				+ getAuthor() + ", getCompany()=" + getCompany() + ", getUser()=" + getUser() + ", toString()="
+				+ super.toString() + ", getClass()=" + getClass() + ", pages=" + pages + ", year=" + year + "]";
+	}
+
+	@Override
+	public String toFile(String separator) {
+		
+		return getId() + separator + getType() + separator + getName() + separator + getAuthor() 
+		+ separator + getAuthor() + separator + getCompany() + separator + getUser() + 
+				  separator + getPages() + separator + getYear();
+	}
 
 	
 

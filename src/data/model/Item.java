@@ -124,13 +124,17 @@ public abstract class Item {
 		return true;
 	}
 
-	@Override
+
 	public String toString() {
 		return "Item [id=" + id + ", type=" + type + ", name=" + name + ", author=" + author + ", company=" + company
 				+ ", user=" + user + "]";
 	}
 	
-	
-	
+	public String toFile(String separator) {
+		
+		return getId() + separator + getType() + separator + getName() + separator + getAuthor() 
+		+ separator + getAuthor() + separator + getCompany() + separator + getUser();
+				
+	}
 	
 }

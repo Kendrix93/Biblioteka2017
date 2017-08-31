@@ -61,6 +61,7 @@ public class MainController {
 			UserManage.showUsers();
 			EmployyPanel();
 		case 0:
+			SaveToCSV.saveToFileItems();
 			System.exit(0);
 			
 			

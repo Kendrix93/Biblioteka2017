@@ -42,6 +42,13 @@ public class Film extends Item {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "Film [getId()=" + getId() + ", getType()=" + getType() + ", getName()=" + getName() + ", getAuthor()="
+				+ getAuthor() + ", getCompany()=" + getCompany() + ", getUser()=" + getUser() + ", toString()="
+				+ super.toString() + ", getClass()=" + getClass() + ", minuts=" + minuts + "]";
+	}
+
 
 	
 
