@@ -6,8 +6,8 @@ public class Book extends Item{
 	private int year;
 
 	public Book(String id, String type, String name, String author, 
-			String company, int year, int pages, int counter, User user) {
-		super(id, type, name, author, company, counter, user);
+			String company, int year, int pages, User user) {
+		super(id, type, name, author, company,  user);
 		// TODO Auto-generated constructor stub
 		this.year = year;
 		this.pages = pages;

@@ -5,8 +5,8 @@ public class Music extends Item{
 	private int songsQuantity;
 
 	public Music(String id, String type, String name, String author, 
-			String company, int songsQuantity, int counter, User user) {
-		super(id, type, name, author, company, counter, user);
+			String company, int songsQuantity, User user) {
+		super(id, type, name, author, company, user);
 		// TODO Auto-generated constructor stub
 		
 		this.songsQuantity = songsQuantity;

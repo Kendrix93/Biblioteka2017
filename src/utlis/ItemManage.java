@@ -35,7 +35,7 @@ public class ItemManage {
 		number = number + 1;
 		id = "B" + number;
 		
-		items.add(new Book(id, type, name, author, company, year, pages, counter, null));
+		items.add(new Book(id, type, name, author, company, year, pages, null));
 		
 	}
 	
@@ -58,7 +58,7 @@ public class ItemManage {
 		number = number + 1;
 		id = "M" + number;
 		
-		items.add(new Music(id, type, name, author, company, songsQuantity, counter, null));
+		items.add(new Music(id, type, name, author, company, songsQuantity, null));
 		
 	}
 	
@@ -81,7 +81,7 @@ public class ItemManage {
 		number = number + 1;
 		id = "F" + number;
 		
-		items.add(new Music(id, type, name, author, company, minuts, counter, null));
+		items.add(new Music(id, type, name, author, company, minuts, null));
 		
 		
 	}

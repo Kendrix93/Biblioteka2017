@@ -5,8 +5,8 @@ public class Film extends Item {
 	private int minuts;
 
 	public Film(String id, String type, String name, String author, 
-			String company, int minuts, int counter, User user) {
-		super(id, type, name, author, company, counter, user);
+			String company, int minuts, User user) {
+		super(id, type, name, author, company, user);
 		// TODO Auto-generated constructor stub
 		
 		this.minuts = minuts;
