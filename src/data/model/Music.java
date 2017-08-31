@@ -53,8 +53,8 @@ public class Music extends Item{
 	@Override
 	public String toFile(String separator) {
 		
-		return getId() + separator + getType() + separator + getName() + separator + getAuthor() 
-		+ separator + getCompany() + separator + getUser() + 
-				  separator + getSongsQuantity();
+		return getId() + separator + getType() + separator + getName() 
+		+ separator + getAuthor() + separator + getCompany() + separator 
+		+ getSongsQuantity() + separator + getUser();
 	}
 }

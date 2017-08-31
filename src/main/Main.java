@@ -8,6 +8,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		OpenFromCSV.readFromFileUser();
+		OpenFromCSV.readFromFileItems();
 		MainController.EmployyPanel();
 
 	}
