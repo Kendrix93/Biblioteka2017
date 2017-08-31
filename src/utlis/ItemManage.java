@@ -12,7 +12,9 @@ public class ItemManage {
 	
 	private static Set<Item> items = DataHolder.getItems();
 	private static Scanner in = new Scanner(System.in);
-	private static int number = 0;
+	private static int number1 = 0;
+	private static int number2 = 0;
+	private static int number3 = 0;
 	
 	public static void addBook() {
 		
@@ -31,21 +33,22 @@ public class ItemManage {
 		pages = in.nextInt();
 		System.out.println("How many of this books");
 		counter = in.nextInt();
+		in.nextLine();
 		
-		number = number + 1;
-		id = "B" + number;
+		number1 = number1 + 1;
+		id = "B" + number1;
 		
 		items.add(new Book(id, type, name, author, company, year, pages, null));
-		
+		System.out.println("DONE");
 	}
 	
 	public static void addMusic() {
 		
-		String name, author, company, id, type = "MUSIC";
+		String name2, author, company, id, type = "MUSIC";
 		int songsQuantity, counter;
 		
 		System.out.println("Name?");
-		name = in.nextLine();
+		name2 = in.nextLine();
 		System.out.println("Author?");
 		author = in.nextLine();
 		System.out.println("Company?");
@@ -54,35 +57,37 @@ public class ItemManage {
 		songsQuantity = in.nextInt();
 		System.out.println("How many of this cds");
 		counter = in.nextInt();
+		in.nextLine();
 		
-		number = number + 1;
-		id = "M" + number;
+		number2 = number2 + 1;
+		id = "M" + number2;
 		
-		items.add(new Music(id, type, name, author, company, songsQuantity, null));
-		
+		items.add(new Music(id, type, name2, author, company, songsQuantity, null));
+		System.out.println("DONE");
 	}
 	
 	public static void addFilm() {
 		
-		String name, author, company, id, type = "FILM";
+		String name3, author, company, id, type = "FILM";
 		int minuts, counter;
 		
 		System.out.println("Name?");
-		name = in.nextLine();
+		name3 = in.nextLine();
 		System.out.println("Author?");
 		author = in.nextLine();
 		System.out.println("Company?");
 		company = in.nextLine();
-		System.out.println("How many songs?");
+		System.out.println("How many minutes?");
 		minuts = in.nextInt();
 		System.out.println("How many of this films");
 		counter = in.nextInt();
+		in.nextLine();
 		
-		number = number + 1;
-		id = "F" + number;
+		number3 = number3 + 1;
+		id = "F" + number3;
 		
-		items.add(new Music(id, type, name, author, company, minuts, null));
-		
+		items.add(new Music(id, type, name3, author, company, minuts, null));
+		System.out.println("DONE");
 		
 	}
 	

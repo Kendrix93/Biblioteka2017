@@ -67,7 +67,7 @@ public class Book extends Item{
 	public String toFile(String separator) {
 		
 		return getId() + separator + getType() + separator + getName() + separator + getAuthor() 
-		+ separator + getAuthor() + separator + getCompany() + separator + getUser() + 
+		+ separator + getCompany() + separator + getUser() + 
 				  separator + getPages() + separator + getYear();
 	}
 
