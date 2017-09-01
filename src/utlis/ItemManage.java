@@ -5,6 +5,7 @@ import java.util.Set;
 
 import data.holder.DataHolder;
 import data.model.Book;
+import data.model.Film;
 import data.model.Item;
 import data.model.Music;
 
@@ -111,7 +112,7 @@ public class ItemManage {
 		number3 = number3 + 1;
 		id = "F" + number3;
 		
-		items.add(new Music(id, type, name3, author, company, minuts, null));
+		items.add(new Film(id, type, name3, author, company, minuts, null));
 		System.out.println("DONE");
 		}
 		
