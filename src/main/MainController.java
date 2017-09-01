@@ -39,7 +39,8 @@ public class MainController {
 			UserItemActions.rentAnItem();
 			EmployyPanel();
 		case 2:
-			
+			UserItemActions.returnItem();
+			EmployyPanel();
 		case 5:
 			ItemManage.addBook();
 			EmployyPanel();

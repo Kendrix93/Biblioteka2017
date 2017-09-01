@@ -46,7 +46,7 @@ public class ItemManage {
 		number1 = number1 + 1;
 		id = "B" + number1;
 		
-		items.add(new Book(id, type, name, author, company, year, pages, 00));
+		items.add(new Book(id, type, name, author, company, year, pages, 0));
 		System.out.println("DONE");
 		}
 	}
@@ -79,7 +79,7 @@ public class ItemManage {
 		number2 = number2 + 1;
 		id = "M" + number2;
 		
-		items.add(new Music(id, type, name2, author, company, songsQuantity, 00));
+		items.add(new Music(id, type, name2, author, company, songsQuantity, 0));
 		System.out.println("DONE");
 		}
 	}
@@ -112,7 +112,7 @@ public class ItemManage {
 		number3 = number3 + 1;
 		id = "F" + number3;
 		
-		items.add(new Film(id, type, name3, author, company, minuts, 00));
+		items.add(new Film(id, type, name3, author, company, minuts, 0));
 		System.out.println("DONE");
 		}
 		

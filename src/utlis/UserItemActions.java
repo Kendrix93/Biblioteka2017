@@ -32,10 +32,26 @@ public class UserItemActions {
 					break;
 				}
 				i.setUserID(userID);
+				System.out.println("You rent an item " + i.getName() + " to userID " + userID);
 			}
 
 		}
+
 		
+	}
+	
+	public static void returnItem() {
+		
+		System.out.println("What item you want to return");
+		System.out.println("Write ItemID: ");
+		String itemID = in.next();
+		
+		for(Item i : items) {
+			if(i.getId().equals(itemID)) {
+				i.setUserID(00);
+				System.out.println("Done returnig item " + itemID + " " + i.getName());
+			}
+		}
 	}
 
 }
