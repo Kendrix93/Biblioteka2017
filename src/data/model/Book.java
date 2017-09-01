@@ -6,8 +6,8 @@ public class Book extends Item{
 	private int year;
 
 	public Book(String id, String type, String name, String author, 
-			String company, int year, int pages, User user) {
-		super(id, type, name, author, company,  user);
+			String company, int year, int pages, int userID) {
+		super(id, type, name, author, company,  userID);
 		// TODO Auto-generated constructor stub
 		this.year = year;
 		this.pages = pages;
@@ -59,7 +59,7 @@ public class Book extends Item{
 	@Override
 	public String toString() {
 		return "Book [getId()=" + getId() + ", getType()=" + getType() + ", getName()=" + getName() + ", getAuthor()="
-				+ getAuthor() + ", getCompany()=" + getCompany() + ", getUser()=" + getUser() + ", toString()="
+				+ getAuthor() + ", getCompany()=" + getCompany() + ", getUserID()=" + getUserID() + ", toString()="
 				+ super.toString() + ", getClass()=" + getClass() + ", pages=" + pages + ", year=" + year + "]";
 	}
 
@@ -68,7 +68,7 @@ public class Book extends Item{
 		
 		return getId() + separator + getType() + separator + getName() + separator + getAuthor() 
 		+ separator + getCompany() + separator + getYear() 
-		+ separator + getPages() + separator + getUser() ;
+		+ separator + getPages() + separator + getUserID() ;
 	}
 
 	

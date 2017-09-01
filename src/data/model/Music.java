@@ -5,8 +5,8 @@ public class Music extends Item{
 	private int songsQuantity;
 
 	public Music(String id, String type, String name, String author, 
-			String company, int songsQuantity, User user) {
-		super(id, type, name, author, company, user);
+			String company, int songsQuantity, int userID) {
+		super(id, type, name, author, company, userID);
 		// TODO Auto-generated constructor stub
 		
 		this.songsQuantity = songsQuantity;
@@ -46,7 +46,7 @@ public class Music extends Item{
 	@Override
 	public String toString() {
 		return "Music [getId()=" + getId() + ", getType()=" + getType() + ", getName()=" + getName() + ", getAuthor()="
-				+ getAuthor() + ", getCompany()=" + getCompany() + ", getUser()=" + getUser() + ", toString()="
+				+ getAuthor() + ", getCompany()=" + getCompany() + ", getUserID()=" + getUserID() + ", toString()="
 				+ super.toString() + ", getClass()=" + getClass() + ", songsQuantity=" + songsQuantity + "]";
 	}
 	
@@ -55,6 +55,6 @@ public class Music extends Item{
 		
 		return getId() + separator + getType() + separator + getName() 
 		+ separator + getAuthor() + separator + getCompany() + separator 
-		+ getSongsQuantity() + separator + getUser();
+		+ getSongsQuantity() + separator + getUserID();
 	}
 }

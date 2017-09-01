@@ -5,8 +5,8 @@ public class Film extends Item {
 	private int minuts;
 
 	public Film(String id, String type, String name, String author, 
-			String company, int minuts, User user) {
-		super(id, type, name, author, company, user);
+			String company, int minuts, int userID) {
+		super(id, type, name, author, company, userID);
 		// TODO Auto-generated constructor stub
 		
 		this.minuts = minuts;
@@ -45,7 +45,7 @@ public class Film extends Item {
 	@Override
 	public String toString() {
 		return "Film [getId()=" + getId() + ", getType()=" + getType() + ", getName()=" + getName() + ", getAuthor()="
-				+ getAuthor() + ", getCompany()=" + getCompany() + ", getUser()=" + getUser() + ", toString()="
+				+ getAuthor() + ", getCompany()=" + getCompany() + ", getUserID()=" + getUserID() + ", toString()="
 				+ super.toString() + ", getClass()=" + getClass() + ", minuts=" + minuts + "]";
 	}
 
@@ -55,7 +55,7 @@ public class Film extends Item {
 	public String toFile(String separator) {
 		
 		return getId() + separator + getType() + separator + getName() + separator + getAuthor() 
-		+ separator + getCompany() + separator + getMinuts() + separator + getUser();
+		+ separator + getCompany() + separator + getMinuts() + separator + getUserID();
 	}
 
 }

@@ -69,13 +69,13 @@ public class OpenFromCSV {
 			String[] l = line.split(";");
 			if (l[1].equals("BOOK")) {
 				items.add(new Book(l[0], l[1], l[2], l[3], l[4], 
-						Integer.parseInt(l[5]), Integer.parseInt(l[6]), null));
+						Integer.parseInt(l[5]), Integer.parseInt(l[6]), Integer.parseInt(l[7])));
 			} else if (l[1].equals("MUSIC")) {
 				items.add(new Music(l[0], l[1], l[2], l[3], l[4], 
-						Integer.parseInt(l[5]), null));
+						Integer.parseInt(l[5]), Integer.parseInt(l[6])));
 			} else if (l[1].equals("FILM")) {
 				items.add(new Film(l[0], l[1], l[2], l[3], l[4], 
-						Integer.parseInt(l[5]), null));
+						Integer.parseInt(l[5]), Integer.parseInt(l[6])));
 			}
 
 		}

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import utlis.ItemManage;
 import utlis.SaveToCSV;
+import utlis.UserItemActions;
 import utlis.UserManage;
 
 public class MainController {
@@ -14,10 +15,10 @@ public class MainController {
 		
 		System.out.println("Welcome to MAIN MANU");
 		System.out.println("Choose your option:");
-		System.out.println("1. Rent a book");
-		System.out.println("2. Rent a Music");
-		System.out.println("3. Rent a Film");
-		System.out.println("4. Return item");
+		System.out.println("1. Rent an item");
+		System.out.println("2. Return item");
+		System.out.println("3. ");
+		System.out.println("4. ");
 		System.out.println("5. Add book");
 		System.out.println("6. Add Music");
 		System.out.println("7. Add film");
@@ -35,7 +36,8 @@ public class MainController {
 		switch(a) {
 		
 		case 1:
-			
+			UserItemActions.rentAnItem();
+			EmployyPanel();
 		case 2:
 			
 		case 5:

@@ -7,16 +7,16 @@ public abstract class Item {
 	private String name;
 	private String author;
 	private String company;
-	private User user;
+	private int userID;
 	
 	public Item(String id, String type, String name, String author, 
-			String company, User user){
+			String company, int userID){
 		this.id = id;
 		this.type = type;
 		this.name = name; 
 		this.author = author;
 		this.company = company;
-		this.user = user;
+		this.userID = userID;
 		
 	}
 
@@ -60,13 +60,12 @@ public abstract class Item {
 		this.company = company;
 	}
 	
-
-	public User getUser() {
-		return user;
+	public int getUserID() {
+		return userID;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setUserID(int userID) {
+		this.userID = userID;
 	}
 
 	@Override
@@ -78,7 +77,7 @@ public abstract class Item {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
-		result = prime * result + ((user == null) ? 0 : user.hashCode());
+		result = prime * result + userID;
 		return result;
 	}
 
@@ -116,24 +115,22 @@ public abstract class Item {
 				return false;
 		} else if (!type.equals(other.type))
 			return false;
-		if (user == null) {
-			if (other.user != null)
-				return false;
-		} else if (!user.equals(other.user))
+		if (userID != other.userID)
 			return false;
 		return true;
 	}
 
 
+	@Override
 	public String toString() {
 		return "Item [id=" + id + ", type=" + type + ", name=" + name + ", author=" + author + ", company=" + company
-				+ ", user=" + user + "]";
+				+ ", userID=" + userID + "]";
 	}
 	
 	public String toFile(String separator) {
 		
 		return getId() + separator + getType() + separator + getName() + separator + getAuthor() 
-		+ separator + getAuthor() + separator + getCompany() + separator + getUser();
+		+ separator + getAuthor() + separator + getCompany() + separator + getUserID();
 				
 	}
 	
