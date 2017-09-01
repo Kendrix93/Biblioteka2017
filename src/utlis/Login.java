@@ -28,7 +28,7 @@ public class Login {
 				if (users.get(i).getTypeOfUser().equals("ADMIN")) {
 					MainController.EmployyPanel();
 				}else {
-					MainController.UserPanel();
+					MainController.UserPanel(i);
 				}
 			}
 				

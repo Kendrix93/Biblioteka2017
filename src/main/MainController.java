@@ -17,7 +17,7 @@ public class MainController {
 		System.out.println("Choose your option:");
 		System.out.println("1. Rent an item");
 		System.out.println("2. Return item");
-		System.out.println("3. ");
+		System.out.println("3. Search Item");
 		System.out.println("4. ");
 		System.out.println("5. Add book");
 		System.out.println("6. Add Music");
@@ -41,6 +41,11 @@ public class MainController {
 		case 2:
 			UserItemActions.returnItem();
 			EmployyPanel();
+		case 3:
+			ItemManage.searchItems();
+			EmployyPanel();
+		case 4:
+			
 		case 5:
 			ItemManage.addBook();
 			EmployyPanel();
@@ -73,7 +78,7 @@ public class MainController {
 		
 	}
 	
-	public static void UserPanel() {
+	public static void UserPanel(int userID) {
 		
 		System.out.println("Welcome to MAIN MANU");
 		System.out.println("Choose your option:");
@@ -87,7 +92,14 @@ public class MainController {
 		switch(a) {
 		
 		case 1:
-			
+			ItemManage.showMyItems(userID);
+			UserPanel(userID);
+		case 2:
+			ItemManage.searchItems();
+			UserPanel(userID);
+		case 0:
+			SaveToCSV.saveToFileItems();
+			System.exit(0);
 		}
 		
 		

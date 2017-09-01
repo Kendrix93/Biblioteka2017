@@ -137,5 +137,32 @@ public class ItemManage {
 		}
 	}
 	
+	
+	public static void showMyItems(int userID) {
+		
+		for (Item i : items) {
+			if(i.getUserID() == userID) {
+				System.out.println(i);
+			}
+		}	
+	}
+	
+	public static void searchItems() {
 
+		System.out.println("Search:");
+		String words = in.nextLine();
+
+		for (Item i : items) {
+			if (i.getAuthor().equals(words)) {
+				System.out.println(i);
+			} else if (i.getName().equals(words)) {
+				System.out.println(i);
+			} else if (i.getCompany().equals(words)) {
+				System.out.println(i);
+			} else if (i.getId().equals(words)) {
+				System.out.println(i);
+			}
+		}
+
+	}
 }
