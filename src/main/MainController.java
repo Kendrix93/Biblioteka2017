@@ -18,7 +18,7 @@ public class MainController {
 		System.out.println("1. Rent an item");
 		System.out.println("2. Return item");
 		System.out.println("3. Search Item");
-		System.out.println("4. ");
+		System.out.println("4. Show user items");
 		System.out.println("5. Add book");
 		System.out.println("6. Add Music");
 		System.out.println("7. Add film");
@@ -27,7 +27,6 @@ public class MainController {
 		System.out.println("10. Add User");
 		System.out.println("11. Delete User ");
 		System.out.println("12. Show users ");
-		System.out.println(" ");
 		System.out.println(" ");
 		System.out.println("0. Quit");
 		
@@ -45,7 +44,10 @@ public class MainController {
 			ItemManage.searchItems();
 			EmployyPanel();
 		case 4:
-			
+			System.out.println("Write userID:");
+			int userID = in.nextInt();
+			ItemManage.showMyItems(userID);
+			EmployyPanel();
 		case 5:
 			ItemManage.addBook();
 			EmployyPanel();
