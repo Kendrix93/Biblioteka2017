@@ -35,11 +35,19 @@ public class ItemManage {
 		counter = in.nextInt();
 		in.nextLine();
 		
+		for (Item i : items) {
+			if(i.getType().equals("BOOK"))
+				number1++;
+		}
+		
+		for (int i =1; i <= counter ; i++) {
+		
 		number1 = number1 + 1;
 		id = "B" + number1;
 		
 		items.add(new Book(id, type, name, author, company, year, pages, null));
 		System.out.println("DONE");
+		}
 	}
 	
 	public static void addMusic() {
@@ -59,11 +67,20 @@ public class ItemManage {
 		counter = in.nextInt();
 		in.nextLine();
 		
+
+		for (Item i : items) {
+			if(i.getType().equals("MUSIC"))
+				number1++;
+		}
+		
+		for (int i =1; i <= counter ; i++) {
+		
 		number2 = number2 + 1;
 		id = "M" + number2;
 		
 		items.add(new Music(id, type, name2, author, company, songsQuantity, null));
 		System.out.println("DONE");
+		}
 	}
 	
 	public static void addFilm() {
@@ -83,11 +100,20 @@ public class ItemManage {
 		counter = in.nextInt();
 		in.nextLine();
 		
+
+		for (Item i : items) {
+			if(i.getType().equals("FILM"))
+				number1++;
+		}
+		
+		for (int i =1; i <= counter ; i++) {
+		
 		number3 = number3 + 1;
 		id = "F" + number3;
 		
 		items.add(new Music(id, type, name3, author, company, minuts, null));
 		System.out.println("DONE");
+		}
 		
 	}
 	
