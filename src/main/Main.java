@@ -1,5 +1,6 @@
 package main;
 
+import utlis.Login;
 import utlis.OpenFromCSV;
 
 public class Main {
@@ -9,7 +10,8 @@ public class Main {
 		
 		OpenFromCSV.readFromFileUser();
 		OpenFromCSV.readFromFileItems();
-		MainController.EmployyPanel();
+		Login.LoginPanel();
+		//MainController.EmployyPanel();
 
 	}
 
